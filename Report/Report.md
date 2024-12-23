@@ -1,64 +1,44 @@
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image1.png){width="0.9739588801399826in"
-height="0.9166666666666666in"}
 
-# Contents {#contents .TOC-Heading}
+# Wireless Exploitation Using Airgeddon
 
-[***1. Topic Introduction***
-[3](#topic-introduction)](#topic-introduction)
+## Group Members
+- Muhammad Raees Ul Abadien
+- Muhammad Bilal
+- Bilad Ul Haq
+- Sana Sadiq
 
-[**Objective:** [3](#_Toc185414181)](#_Toc185414181)
+---
 
-[**Content:** [3](#content)](#content)
+## Contents
 
-[**Motivation:** [3](#_Toc185414183)](#_Toc185414183)
+1. Topic Introduction  
+    - Objective  
+    - Content  
+    - Motivation  
+2. Description of Tool/Technique Used  
+    - Overview of Tool  
+    - Why Chosen  
+    - Example  
+    - Requirements:  
+        - Hardware Requirements  
+        - Software Specifications  
+        - Networking Requirements  
+        - Skill Requirements  
+        - Miscellaneous Requirements  
+3. Progress  
+4. Demonstration of Attacking Techniques  
+    - Deauth Attack and Handshake Capture  
+    - Dictionary Attack  
+    - Evil Twin Attack  
+5. Airgeddon Limitations  
+6. Mitigation (If Any)  
+7. Conclusion  
 
-[***2. Description of Tool/Technique Used***
-[3](#description-of-tooltechnique-used)](#description-of-tooltechnique-used)
-
-[**Overview of Tool:** [3](#overview-of-tool)](#overview-of-tool)
-
-[**Why Chosen:** [3](#_Toc185414186)](#_Toc185414186)
-
-[**Example:** [3](#example)](#example)
-
-[**Requirements:** [4](#requirements)](#requirements)
-
-[**Hardware Requirements:**
-[4](#hardware-requirements)](#hardware-requirements)
-
-[**Software Specifications:**
-[4](#software-specifications)](#software-specifications)
-
-[**Networking Requirements:**
-[4](#networking-requirements)](#networking-requirements)
-
-[**Skill Requirements:** [4](#skill-requirements)](#skill-requirements)
-
-[**Miscellaneous Requirements:**
-[4](#miscellaneous-requirements)](#miscellaneous-requirements)
-
-[***3. Progress*** [5](#progress)](#progress)
-
-[***4. Demonstration of Attacking Techniques***
-[6](#demonstration-of-attacking-techniques)](#demonstration-of-attacking-techniques)
-
-[*4.1 & 4.2 Deauth Attack and Handshake Capture*
-[6](#deauth-attack-and-handshake-capture)](#deauth-attack-and-handshake-capture)
-
-[***Use case:*** [12](#use-case)](#use-case)
-
-[5. Airgeddon Limitations
-[14](#airgeddon-limitations)](#airgeddon-limitations)
-
-[6. Mitigation (If Any) [14](#mitigation-if-any)](#mitigation-if-any)
-
-[7. Conclusion [15](#conclusion)](#conclusion)
-
-[Report on Airgeddon Project]{.underline}
+---
 
 # ***1. Topic Introduction***
 
-[]{#_Toc185414181 .anchor}**Objective:** To explore the functionality
+**Objective:** To explore the functionality
 and applications of Airgeddon, a versatile tool designed for wireless
 network auditing and penetration testing.
 
@@ -70,7 +50,7 @@ in modern society has made them a prime target for cyberattacks. Tools
 like Airgeddon are necessary to identify vulnerabilities and strengthen
 networks.
 
-[]{#_Toc185414183 .anchor}**Motivation:** The purpose of the project is
+**Motivation:** The purpose of the project is
 to understand the procedures of wireless auditing and deploy effective
 measures in enhancing network security.
 
@@ -82,7 +62,7 @@ measures in enhancing network security.
 
 **Version:** Release 105 (version 11.40)
 
-[]{#_Toc185414186 .anchor}**Why Chosen:** The reason for using Airgeddon
+Why Chosen:** The reason for using Airgeddon
 is that it can be adapted to perform such activities like wireless
 network auditing, handshakes, and assessing network strength. This tool
 comes with an intuitive interface, along with welldocumented
@@ -108,8 +88,7 @@ realistic attack scenarios for users; this makes it possible for them to
 improve their networks\' defenses. Below is a screenshot of the tool
 while in action.
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image2.png){width="6.30251312335958in"
-height="1.67874343832021in"}
+![Step 1](images/img1_example.png)
 
 ## **Requirements:**
 
@@ -257,20 +236,17 @@ the devices try to reconnect to the attacked network as follows.
 
 1.  First start the airgeddon tool:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image3.png){width="3.3890627734033245in"
-> height="1.4097944006999126in"}
+![Step 2](images/img2_startairgeddon.png)
 
 The following screen will appear and now the tool will check for
 necessary required sub tools:
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image4.png){width="6.031830708661417in"
-height="3.1686417322834646in"}
+![Step 3](images/img3_mainscreen.png)
 
 2.  Now the tool/script will ask you to select an interface to conduct
     the attack.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image5.png){width="6.042165354330709in"
-> height="1.554705818022747in"}
+![Step 4](images/img4_select_interface.png)
 >
 > **Note: if you are using kali virtual machine you will get the first
 > interface as eth0(Do not select this one) and also you need to have
@@ -279,24 +255,22 @@ height="3.1686417322834646in"}
 3.  Select one of the two wireless interface. We have selected the 2^nd^
     one.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image6.png){width="6.149815179352581in"
-> height="0.6487095363079615in"}
+![Step 5](images/img5_selected_interface.png)
 
 4.  You will get the following interface:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image7.png){width="6.170710848643919in"
-> height="2.7893788276465443in"}
+![Step 6](images/img6_screen.png)
 
 5.  First you need to put your network interface into monitoring mode to
     do that enter 2:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image8.png){width="6.257302055993001in"
-> height="1.5032556867891513in"}
+![Step 7](images/img7_enablingmonitormode.png)
+
 
 Press enter and you will be back to this interface:
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image9.png){width="6.4636832895888015in"
-height="3.3022462817147855in"}
+![Step 8](images/img8_monitormode.png)
+
 
 **Note: But see on the top most of the terminal you will see that now
 your network interface is in monitoring mode (You are all set to go).**
@@ -304,29 +278,25 @@ your network interface is in monitoring mode (You are all set to go).**
 6.  Now focus on the options from (4 - 10). You will see
     Handshake/PMKID/Deloaking tools menu. Press to enter in the menu.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image10.png){width="6.449094488188976in"
-> height="2.871467629046369in"}
+![Step 9](images/img9_starthandshake.png)
 
 7.  We are interested in the capture of handshake file so we will press
     6 to start the attack.
+![Step 9](images/img9_starthandshake.png)
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image11.png){width="6.536411854768154in"
-> height="1.1786964129483815in"}
 >
 > There is no target network selected. Press enter and you will see a
 > magic.
 >
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image12.png){width="6.57334864391951in"
-> height="1.0017672790901138in"}
+![Step 10](images/img10_novalidkey.png)
 >
 > Press enter to scan targets near you and wait for 30 seconds and then
 > press Ctrl + C to stop scanning.
 >
 > You will get the following interface:
 >
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image13.png){width="6.487274715660543in"
-> height="2.10250656167979in"}
->
+![Step 11](images/img11_capturedtargets.png)
+
 > **Note: The \* sign indicates the targets with clients connected.**
 
 8.  Now select the target network in our case we will select **NTL
@@ -334,8 +304,7 @@ your network interface is in monitoring mode (You are all set to go).**
     (Never attack the network you don't have permission to) You will get
     the following options.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image14.png){width="6.52538823272091in"
-> height="1.573675634295713in"}
+![Step 12](images/img12_scantargets.png)
 
 **Note:**
 
@@ -362,43 +331,36 @@ availability of the network.
 9.  In our case we will be going with the 2^nd^ method to deauth the
     clients connected to the network.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image15.png){width="6.497327209098863in"
-> height="0.5307863079615048in"}
+![Step 13](images/img13_deauth_attack.png)
 >
 > The tool is asking you to select a time interval in which after it
 > sends the deauth packets until a handshake file is captured. We will
 > go with the default timer.
 >
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image16.png){width="6.587229877515311in"
-> height="0.7804472878390202in"}
+![Step 14](images/img14_startattack.png)
 >
 > Press enter to the start the attack.
 >
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image17.png){width="1.4584087926509186in"
-> height="0.7222594050743657in"}
+![Step 15](images/img15_pressenter.png)
 >
 > As you can see two external windows are doing the work for you.
 
 10. Now if the attack is successful you will be prompted to enter a path
     where to store the captured handshake file.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image18.png){width="6.6972320647419075in"
-> height="0.7102930883639546in"}
+![Step 16](images/img16_pathforhandshake.png)
 
 In our case we will give the Desktop for our convenience.
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image19.png){width="6.5959437882764655in"
-height="0.8627788713910761in"}
+![Step 17](images/img17_filedestination.png)
 
 To confirm that our file is stored in the specific directory.
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image20.png){width="6.45920384951881in"
-height="0.9217771216097987in"}
+![Step 18](images/img18_showingsavedfile.png)
 
 11. Focusing on our tool now you will get the following interface
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image21.png){width="6.348451443569553in"
-> height="3.4186767279090113in"}
+![Step 19](images/img19_backtomainmenu.png)
 >
 > But just focus on the top of the terminal, you will get the details
 > about our target network. But for now we will go back to our main
@@ -406,8 +368,7 @@ height="0.9217771216097987in"}
 
 12. Handshake file details (We thought it will be better to add this)
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image22.png){width="6.445636482939633in"
-> height="3.2462204724409447in"}
+![Step 20](images/img20_handshakefiledetail.png)
 >
 > As you can see we have the WPA key in encrypted form and that's all
 > for this attack. Further information on how to decrypt this key or
@@ -443,14 +404,12 @@ be secure.
 
 1.  Coming back to the main menu:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image23.png){width="6.301349518810149in"
-> height="1.9976946631671042in"}
+![Step 21](images/img21_dictionaryattack01.png)
 
 2.  Select the **[6. Offline WPA/WPA2 decrypt menu]{.underline}**
     option.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image24.png){width="6.417783245844269in"
-> height="2.7342727471566053in"}
+![Step 22](images/img22_offlineselection.png)
 >
 > Focus on the top of the terminal where the information is given about
 > the decrypt methods and the selected handshake file. Select the option
@@ -460,8 +419,8 @@ be secure.
 
 3.  You will be treated with the following menu:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image25.png){width="6.6360269028871395in"
-> height="2.2306080489938758in"}
+![Step 23](images/img23_attackagainstcapturedfile.png)
+
 >
 > **Note: There are lots of offline attacks you can perform using
 > airgeddon. In this report we are covering "[(aircrack) Dictionary
@@ -469,15 +428,13 @@ be secure.
 
 4.  Carrying the attack:
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image26.png){width="6.692053805774278in"
-> height="0.906081583552056in"}
+![Step 24](images/img24_carryingattack.png)
 >
 > The tool will ask you to select a handshake file but if you have
 > already selected a target network and captured a handshake file, the
 > tool will automatically select the captured file.
 >
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image27.png){width="6.650226377952756in"
-> height="1.0312751531058617in"}
+![Step 25](images/img25_selectingcapturedfile.png)
 >
 > Press Y to continue
 
@@ -486,13 +443,11 @@ be secure.
     that contains compromised passwords). In my case I have a file
     stored on the Desktop.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image28.png){width="4.534955161854768in"
-> height="1.0417202537182852in"}
+![Step 26](images/img26_selectingpasswd_list.png)
 
 6.  Press enter to start the attack.
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image29.png){width="6.649480533683289in"
-> height="3.58244750656168in"}
+![Step 27](images/img27_startingattack.png)
 >
 > **Note: The dictionary attack will only be successful if your target
 > network has a compromised password like "12345678" or "0000000" and
@@ -527,48 +482,39 @@ interface we will just move to main points of this attack.*
 
 1.  Return to main menu and select Evil twin Attack
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image30.jpg){width="6.284583333333333in"
-height="1.992361111111111in"}
+![Step 28](images/img28_eviltwinattack01.png)
 
 2.  Start evil twin attack with captive portal at the end
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image31.png){width="6.798611111111111in"
-height="3.8222222222222224in"}
+![Step 29](images/img29_starteviltwin.png)
 
 3.  Search and choose the network as before
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image32.png){width="7.268055555555556in"
-height="3.810416666666667in"}
+![Step 30](images/img30_selecttarget.png)
 
 4.  Use the Deauth and Disassoc attack
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image33.png){width="7.268055555555556in"
-height="2.276388888888889in"}
+![Step 31](images/img31_usedeauth_disassoc.png)
 
 5.  Use recently used handshake
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image34.png){width="7.268055555555556in"
-height="2.59375in"}
+![Step 32](images/img32_slechandshakefile.png)
 
 6.  Choose the language and start attack
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image35.png){width="7.268055555555556in"
-height="3.410416666666667in"}
+![Step 33](images/img33_selectlanguage.png)
 
 7.  Attack Screen
 
-> ![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image36.png){width="6.777777777777778in"
-> height="3.729861111111111in"}
+![Step 34](images/img34_attackscreen.png)
 
 8.  User's End Screen
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image37.jpeg){width="4.788194444444445in"
-height="5.722222222222222in"}
+![Step 35](images/img35_userendscreen.png)
 
 9.  Password will be stored at given Location
 
-![](vertopal_1491b1cfa0c242f4ba5455d4c3d35779/media/image38.png){width="7.268055555555556in"
-height="3.45625in"}
+![Step 36](images/img36_storedpass.png)
 
 ### 5. Airgeddon Limitations
 
@@ -616,7 +562,3 @@ penetration testing.
 This project highlighted the practical applications of cybersecurity
 tools and reinforced concepts related to wireless network
 vulnerabilities.
-
-**Extra Notes:**\
-Ensure compliance with legal and ethical guidelines. Replace
-placeholders with actual screenshots and data.
