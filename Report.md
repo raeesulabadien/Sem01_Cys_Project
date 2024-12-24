@@ -498,7 +498,7 @@ interface we will just move to main points of this attack.*
 
 5.  Use recently used handshake
 
-![Step 32](images/img32_slechandshakefile.png)
+![Step 32](images/img32_slecthandshakefile.png)
 
 6.  Choose the language and start attack
 
