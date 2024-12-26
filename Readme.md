@@ -33,7 +33,7 @@ Best regards,
 Muhammad Raees Ul Abadien  
 Muhammad Bilal
 Bilad Ul Haq
-Sana Sadiq
----
+Sana Sadiq Malik
+
 
 *Please feel free to reach out if you have any questions or need further information about our project!*
